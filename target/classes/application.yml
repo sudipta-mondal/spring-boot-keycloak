@@ -1,0 +1,15 @@
+server:
+  port: 9080
+
+spring:
+  h2:
+    console:
+      enabled: true
+      
+
+keycloak:
+  realm: javaUsers
+  auth-server-url: http://localhost:8080
+  resource: springboot
+  public-client: true
+  bearer-only: true
